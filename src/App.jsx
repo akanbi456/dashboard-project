@@ -48,7 +48,7 @@ import { useState } from 'react'
 // Components
 import Header from './component/Header/Header'
 import Sidebar from './component/Sidebar/Sidebar'
-import Main from './ui/Main'
+import Main from './ui/Exact'
 import Content from './ui/content'
 import Profile from './component/Profile/Profile'
 import Stats from './component/Stats/Stats'
