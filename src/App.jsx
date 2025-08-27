@@ -54,6 +54,7 @@ import Profile from './component/Profile/Profile'
 import Stats from './component/Stats/Stats'
 import Team from './component/Team/Team'
 import Event from './component/Event/Event'
+import Exact from './ui/Exact'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false)
@@ -75,7 +76,7 @@ function App() {
       <Sidebar isSidebarOpen={isSidebarOpen} />
 
       {/* Main Dashboard Layout */}
-      <Main>
+      <Exact>
         {/* Central Scrollable Content Area */}
         <Content>
           {/* Cards and Stats Section */}
@@ -90,7 +91,7 @@ function App() {
 
         {/* Right-side Profile Section */}
         <Profile darkMode={darkMode} />
-      </Main>
+      </Exact>
     </div>
   )
 }
